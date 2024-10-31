@@ -1,4 +1,4 @@
-"""Custom types for integration_blueprint."""
+"""Custom types for olarm-hass."""
 
 from __future__ import annotations
 
@@ -9,17 +9,17 @@ if TYPE_CHECKING:
     from homeassistant.config_entries import ConfigEntry
     from homeassistant.loader import Integration
 
-    from .api import IntegrationBlueprintApiClient
-    from .coordinator import BlueprintDataUpdateCoordinator
+    from .api import OlarmHassApiClient
+    from .coordinator import OlarmDataUpdateCoordinator
 
 
-type IntegrationBlueprintConfigEntry = ConfigEntry[IntegrationBlueprintData]
+type OlarmHassConfigEntry = ConfigEntry[OlarmHassData]
 
 
 @dataclass
-class IntegrationBlueprintData:
+class OlarmHassData:
     """Data for the Blueprint integration."""
 
-    client: IntegrationBlueprintApiClient
-    coordinator: BlueprintDataUpdateCoordinator
+    client: OlarmHassApiClient
+    coordinator: OlarmDataUpdateCoordinator
     integration: Integration
