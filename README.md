@@ -41,16 +41,16 @@ If you want to contribute to this please read the [Contribution guidelines](CONT
 ***
 
 [olarm-hass]: https://github.com/zAAmpie/olarm-hass
-[buymecoffee]: https://www.buymeacoffee.com/ludeeus
+[buymecoffee]: https://www.buymeacoffee.com/zAAmpie
 [buymecoffeebadge]: https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg?style=for-the-badge
-[commits-shield]: https://img.shields.io/github/commit-activity/y/ludeeus/olarm-hass.svg?style=for-the-badge
+[commits-shield]: https://img.shields.io/github/commit-activity/y/zAAmpie/olarm-hass.svg?style=for-the-badge
 [commits]: https://github.com/zAAmpie/olarm-hass/commits/main
-[discord]: https://discord.gg/Qa5fW2R
-[discord-shield]: https://img.shields.io/discord/330944238910963714.svg?style=for-the-badge
+[discord]: https://discord.gg/
+[discord-shield]: https://img.shields.io/discord/123.svg?style=for-the-badge
 [exampleimg]: example.png
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg?style=for-the-badge
 [forum]: https://community.home-assistant.io/
-[license-shield]: https://img.shields.io/github/license/ludeeus/olarm-hass.svg?style=for-the-badge
-[maintenance-shield]: https://img.shields.io/badge/maintainer-Joakim%20Sørensen%20%40ludeeus-blue.svg?style=for-the-badge
-[releases-shield]: https://img.shields.io/github/release/ludeeus/olarm-hass.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/zAAmpie/olarm-hass.svg?style=for-the-badge
+[maintenance-shield]: https://img.shields.io/badge/maintainer-zAAmpie-blue.svg?style=for-the-badge
+[releases-shield]: https://img.shields.io/github/release/zAAmpie/olarm-hass.svg?style=for-the-badge
 [releases]: https://github.com/zAAmpie/olarm-hass/releases
