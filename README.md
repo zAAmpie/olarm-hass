@@ -41,7 +41,7 @@ If you want to contribute to this please read the [Contribution guidelines](CONT
 ***
 
 [olarm-hass]: https://github.com/zAAmpie/olarm-hass
-[buymecoffee]: https://www.buymeacoffee.com/zAAmpie
+[buymecoffee]: https://www.buymeacoffee.com/zaampie
 [buymecoffeebadge]: https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg?style=for-the-badge
 [commits-shield]: https://img.shields.io/github/commit-activity/y/zAAmpie/olarm-hass.svg?style=for-the-badge
 [commits]: https://github.com/zAAmpie/olarm-hass/commits/main
