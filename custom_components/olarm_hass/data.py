@@ -18,7 +18,7 @@ type OlarmHassConfigEntry = ConfigEntry[OlarmHassData]
 
 @dataclass
 class OlarmHassData:
-    """Data for the Blueprint integration."""
+    """Data for the Olarm integration."""
 
     client: OlarmHassApiClient
     coordinator: OlarmDataUpdateCoordinator

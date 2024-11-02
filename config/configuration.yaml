@@ -9,4 +9,4 @@ homeassistant:
 logger:
   default: info
   logs:
-    custom_components.olarm-hass: debug
+    custom_components.olarm_hass: debug

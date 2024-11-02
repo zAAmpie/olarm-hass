@@ -17,7 +17,7 @@ if TYPE_CHECKING:
 
 ENTITY_DESCRIPTIONS = (
     SwitchEntityDescription(
-        key="olarm-hass",
+        key="olarm_hass",
         name="Integration Switch",
         icon="mdi:format-quote-close",
     ),

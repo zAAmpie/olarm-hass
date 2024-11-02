@@ -1,8 +1,8 @@
 {
-  "domain": "olarm-hass",
+  "domain": "olarm_hass",
   "name": "Olarm",
   "codeowners": [
-    "@ludeeus"
+    "@zAAmpie"
   ],
   "config_flow": true,
   "documentation": "https://github.com/zAAmpie/olarm-hass",

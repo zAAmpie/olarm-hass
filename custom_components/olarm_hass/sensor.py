@@ -1,14 +1,10 @@
-"""Binary sensor platform for olarm-hass."""
+"""Sensor platform for olarm-hass."""
 
 from __future__ import annotations
 
 from typing import TYPE_CHECKING
 
-from homeassistant.components.binary_sensor import (
-    BinarySensorDeviceClass,
-    BinarySensorEntity,
-    BinarySensorEntityDescription,
-)
+from homeassistant.components.sensor import SensorEntity, SensorEntityDescription
 
 from .entity import OlarmHassEntity
 
@@ -20,10 +16,10 @@ if TYPE_CHECKING:
     from .data import OlarmHassConfigEntry
 
 ENTITY_DESCRIPTIONS = (
-    BinarySensorEntityDescription(
-        key="olarm-hass",
-        name="Olarm Binary Sensor",
-        device_class=BinarySensorDeviceClass.CONNECTIVITY,
+    SensorEntityDescription(
+        key="olarm_hass",
+        name="Integration Sensor",
+        icon="mdi:format-quote-close",
     ),
 )
 
@@ -33,9 +29,9 @@ async def async_setup_entry(
     entry: OlarmHassConfigEntry,
     async_add_entities: AddEntitiesCallback,
 ) -> None:
-    """Set up the binary_sensor platform."""
+    """Set up the sensor platform."""
     async_add_entities(
-        OlarmHassBinarySensor(
+        OlarmHassSensor(
             coordinator=entry.runtime_data.coordinator,
             entity_description=entity_description,
         )
@@ -43,19 +39,19 @@ async def async_setup_entry(
     )
 
 
-class OlarmHassBinarySensor(OlarmHassEntity, BinarySensorEntity):
-    """olarm-hass binary_sensor class."""
+class OlarmHassSensor(OlarmHassEntity, SensorEntity):
+    """olarm-hass Sensor class."""
 
     def __init__(
         self,
         coordinator: OlarmDataUpdateCoordinator,
-        entity_description: BinarySensorEntityDescription,
+        entity_description: SensorEntityDescription,
     ) -> None:
-        """Initialize the binary_sensor class."""
+        """Initialize the sensor class."""
         super().__init__(coordinator)
         self.entity_description = entity_description
 
     @property
-    def is_on(self) -> bool:
-        """Return true if the binary_sensor is on."""
-        return self.coordinator.data.get("title", "") == "foo"
+    def native_value(self) -> str | None:
+        """Return the native value of the sensor."""
+        return self.coordinator.data.get("body")
